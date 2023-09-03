@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <button id="openSidebarButton">&#9776;</button>
+    <aside id="sidebar" class="hidden">
+        <button id="closeSidebarButton">&times; Close Sidebar</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="#">Companies</a></li>
+        </ul>
+    </aside>
+    <section class="signin-content">
+        <h1>Sign In</h1>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button id="signinButton" class="btn-primary">Sign In</button>
+        </form>
+    </section>
+    <script src="web.js"></script>
+</body>
+</html>
