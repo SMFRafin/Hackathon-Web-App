@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const detailsButtons = document.querySelectorAll('.details');
     const sectionTitle = document.getElementById("sectionTitle");
     const sectionContent = document.getElementById("sectionContent");
-
     function display() {
         header.innerHTML = '<h1> Welcome to Virtual Job Fair</h1>';
     }

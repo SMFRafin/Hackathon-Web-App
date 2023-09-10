@@ -183,10 +183,25 @@ input[type="password"] {
     margin-left: auto;
     margin-right: auto;
 }
-
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
 h1 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+header h1{
+    animation: scrollText 15s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 label {
@@ -194,6 +209,7 @@ label {
 }
 
 .form-group {
+    size: 50px;
     margin-bottom: 20px;
 }
 
@@ -222,7 +238,11 @@ label {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
+.signup-form{
+    background-color: #ccc;
+    border-radius: 20px;
+    padding: 25px;
+}
 input[type="date"] {
     width: 100%;
     padding: 10px;
@@ -245,6 +265,46 @@ select.form-control {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select.form-control:focus {
+    border-color: #007BFF;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="file"]:focus {
+    border-color: #007BFF;
+    background-color: #fff;
 }
 
 footer {

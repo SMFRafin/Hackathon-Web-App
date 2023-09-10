@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Registration - Virtual Job Fair</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <button id="openSidebarButton">&#9776;</button>
+    <aside id="sidebar" class="hidden">
+        <button id="closeSidebarButton">&times; Close Sidebar</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </aside>
+    <header>
+        <h1>Client Registration</h1>
+    </header>
+    <main>
+        <div class="signup-form">
+            <form action="client-registration-process.php" method="POST">
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="companySize">Company Size</label>
+                    <input type="number" id="companySize" name="companySize" required>
+                </div>
+                <div class="form-group">
+                    <label for="industry">Industry</label>
+                    <select class="form-control" id="industry" name="industry" required>
+                        <option value="IT">Information Technology</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Food">Food & Bevarage</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="sign.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </footer>
+    <script src="web.js"></script>
+</body>
+</html>
