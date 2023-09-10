@@ -1,8 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-image: url('https://nul.org/sites/default/files/2020-04/virtual-job-fair-somerset-may-2022nd-33v2.png');
+    background-color: rgba(222, 212, 212, 0.537)
+
 }
 
 header {
@@ -13,7 +15,6 @@ header {
 }
 
 main {
-    background-color: rgb(106, 156, 173);
     text-align: center;
     border:none;
     padding: 200px;
@@ -54,14 +55,14 @@ main {
     text-shadow: red;
 }
 .featured-jobs {
-    background-color: #fff;
+    background-color: transparent;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .featured-jobs h3 {
-    color: #333;
+    color: red;
     font-size: 24px;
     margin-bottom: 15px;
 }
@@ -104,7 +105,7 @@ main {
     color: #fff;
 }
 
-#details
+.details
 {
     color: blue;
     background-color: transparent;
@@ -115,8 +116,11 @@ main {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
-
-#details:hover{
+.desc
+{
+    cursor: pointer;
+}
+.details:hover{
     background-color: #007BFF;
 }
 
@@ -168,10 +172,85 @@ input[type="password"] {
 .btn-primary:hover {
     background-color: #0056b3;
 }
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form-group input[type="file"] {
+    margin-top: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 footer {
     background-color: #333;
     color: black;
     text-align: left;
-    padding: 5px;
+    padding: 25px;
     font-size: small;
 }

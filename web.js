@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const sidebar = document.getElementById('sidebar');
     const openSidebarButton = document.getElementById('openSidebarButton');
     const closeSidebarButton = document.getElementById('closeSidebarButton');
-    const detailsButtons = document.querySelectorAll('details');
+    const detailsButtons = document.querySelectorAll('.details');
+    const sectionTitle = document.getElementById("sectionTitle");
+    const sectionContent = document.getElementById("sectionContent");
 
     function display() {
         header.innerHTML = '<h1> Welcome to Virtual Job Fair</h1>';
@@ -11,6 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function openSidebar() {
         sidebar.style.left = '0';
+    }
+    //function to display about us and contact us
+    function displayInfo(title, content) {
+        sectionTitle.textContent = title;
+        sectionContent.textContent = content;
     }
 
     // Function to close the sidebar
@@ -27,6 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
     closeSidebarButton.addEventListener('click', closeSidebar);
     detailsButtons.forEach(function(button) {
         button.addEventListener('click', toggleJobDetails);
+    });
+    document.querySelector("footer li:nth-child(1)").addEventListener("click", function() {
+        displayInfo("Contact Us", "You can reach us at smartvillage@example.com.");
+    });
+    document.querySelector("footer li:nth-child(2)").addEventListener("click", function() {
+        displayInfo("About Us", "We are a leading job fair organizer committed to connecting job seekers and employers.");
     });
     display();
 });
