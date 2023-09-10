@@ -203,7 +203,13 @@ header h1{
     width: 100%;
     position: relative;
 }
-
+header p{
+    animation: scrollText 15s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    position: relative;   
+}
 label {
     font-weight: bold;
 }
