@@ -62,7 +62,7 @@ main {
 }
 
 .featured-jobs h3 {
-    color: red;
+    color: #333;
     font-size: 24px;
     margin-bottom: 15px;
 }
@@ -85,8 +85,8 @@ main {
 }
 
 .featured-jobs p {
-    color: #555;
-    font-size: 16px;
+    color: black;
+    font-size: 20px;
     margin: 0;
 }
 #apply1 {
