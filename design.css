@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://nul.org/sites/default/files/2020-04/virtual-job-fair-somerset-may-2022nd-33v2.png');
     background-color: rgba(222, 212, 212, 0.537)
 
 }
@@ -17,7 +16,42 @@ header {
 main {
     text-align: center;
     border:none;
-    padding: 200px;
+    padding: 300px;
+}
+.img1 img{
+    border-radius: 30px;
+    width: 550px;
+    height: 270px;
+    position: relative;
+    top: -250px;
+}
+.img1 h3{
+    position: relative;
+    top: -240px;
+}
+
+.img2 img{
+    border-radius: 30px;
+    width: 550px;
+    height: 270px;
+    position: relative;
+    top: -200px;
+}
+.img2 h3{
+    position: relative;
+    top: -190px;
+}
+
+.img3 img{
+    border-radius: 30px;
+    width: 550px;
+    height: 270px;
+    position: relative;
+    top: -150px;
+}
+.img3 h3{
+    position: relative;
+    top: -140px;
 }
 
 #sidebar {
@@ -184,11 +218,11 @@ input[type="password"] {
     margin-right: auto;
 }
 @keyframes scrollText {
-    0% {
+    50% {
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(0%);
+        transform: translateX(-50%);
     }
 }
 h1 {
@@ -196,20 +230,14 @@ h1 {
     margin-bottom: 20px;
 }
 
-header h1{
-    animation: scrollText 15s linear infinite;
+/* header h1{
+    animation: scrollText 5s linear infinite;
     white-space: nowrap;
     overflow: hidden;
-    width: 100%;
+    width: 50%;
     position: relative;
-}
-header p{
-    animation: scrollText 15s linear infinite;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    position: relative;   
-}
+} */
+
 label {
     font-weight: bold;
 }
@@ -317,6 +345,7 @@ footer {
     background-color: #333;
     color: black;
     text-align: left;
-    padding: 25px;
+    padding: 30px;
     font-size: small;
 }
+
