@@ -328,6 +328,10 @@ input[type="file"]:focus {
     border-color: #007BFF;
     background-color: #fff;
 }
+.signup-options{
+    position: relative;
+    top: -200px;
+}
 
 footer {
     background-color: #333;
